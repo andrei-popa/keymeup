@@ -1,3 +1,83 @@
+* {
+	box-sizing: border-box;
+}
 body {
-	
+	font-family: 'Source Sans Pro';
+}
+
+#wrapper.overthefold {
+	#featured {
+		background: url(../img/bg-main.jpg) 50% 50% no-repeat;
+		background-size: cover;
+		width: 100%;
+		min-height: 115vh;
+		background-attachment: fixed;
+		position: relative;
+		overflow: hidden;
+
+		&:after {
+			display: block;
+			content:"";
+			height: 10vh;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 10vh 0 0 120vw;
+			border-color: transparent transparent transparent #fff;
+			position: absolute;
+			bottom: 0;
+			z-index: 4
+		}
+		&:before {
+			display: block;
+			content:"";
+			height: 10vh;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 10vh 0 0 120vw;
+			border-color: transparent transparent transparent rgba(0,0,0,0.1);
+			position: absolute;
+			bottom: 10px;
+			z-index: 3
+		}
+		h1 {
+			color: #fff;
+			margin-top: 90px;
+		}
+		p {
+			color: #fff;
+			font-size: 24px;
+			font-weight: 300;
+			margin: 30px 0 90px;
+		}
+	}
+}
+.keymeup-logo {
+	margin-top: 60px;
+	width:240px;
+
+	img {
+		width:100%;
+	}
+}
+.k-device {
+	margin-top: -70px;
+	max-width: 560px;
+	position: fixed;
+	margin-left: auto;
+
+	img {
+		width:100%;
+	}
+}
+
+
+/* == utils == */
+.fll {float: left;}
+.flr {float: right;}
+.cf:after {
+	clear: both;
+	display:block;
+	content:"";
 }
