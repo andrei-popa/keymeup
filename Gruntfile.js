@@ -9,7 +9,7 @@ module.exports = function(grunt) {
 	  },
 	  target: {
 	    files: {
-	      'css/keymeup.min.css': ['node_modules/bootstrap/dist/css/bootstrap.min.css','node_modules/font-awesome/css/font-awesome.min.css','css/*.css','!css/keymeup.min.css','!css/*.scss']
+	      'css/keymeup.min.css': ['node_modules/font-awesome/css/font-awesome.min.css','node_modules/bootstrap/dist/css/bootstrap.min.css','css/*.css','!css/keymeup.min.css','!css/*.scss']
 	    }
 	  }
 	}
