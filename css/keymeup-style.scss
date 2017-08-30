@@ -7,13 +7,14 @@ body {
 
 #wrapper.overthefold {
 	#featured {
-		background: url(../img/bg-main.jpg) 50% 50% no-repeat;
+		background: url(../img/bg-main2.jpg) 50% 50% no-repeat;
 		background-size: cover;
 		width: 100%;
 		min-height: 115vh;
 		background-attachment: fixed;
 		position: relative;
 		overflow: hidden;
+		text-shadow: 0 1px 1px rgba(0,0,0,0.2);
 
 		&:after {
 			display: block;
@@ -62,10 +63,10 @@ body {
 	}
 }
 .k-device {
-	margin-top: -70px;
+	margin-top: -120px;
 	max-width: 560px;
 	position: fixed;
-	margin-left: auto;
+	margin-left: 20px;
 
 	img {
 		width:100%;
