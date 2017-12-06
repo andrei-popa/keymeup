@@ -155,6 +155,17 @@ body {
 	.k-member:first-child {
 		margin-bottom: 50px;
 	}
+	#wrapper.overthefold #featured {
+		background-attachment: scroll;
+		background-position: 0 0;
+		background-size: cover;
+	}
+	.features {
+		background-size: 500%;
+    	background-position: 50% 60%;
+    	background-attachment: scroll;
+    	background-repeat: repeat;
+	}
 }
 @media screen and (max-width:380px) {
 	.section-title {
