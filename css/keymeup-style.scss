@@ -136,6 +136,22 @@ body {
 		font-weight: 700;
 	}
 }
+.scrolldown {
+	position: absolute;
+	width:30px;
+	height: 30px;
+	bottom:120px;
+	left:0;
+	right:0;
+	margin:auto;
+	display: block;
+	z-index: 99;
+
+	img {
+		width:100%;
+		height: auto;
+	}
+}
 
 /* == media queries == */
 @media screen and (max-width:991px) {

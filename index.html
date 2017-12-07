@@ -48,6 +48,9 @@
         </div>
       </div>
       </div>
+      <div class="scrolldown hidden-sm hidden-xs">
+        <img src="img/arrow.gif" alt="">
+      </div>
     </div>
   </div>
   <div class="section features" style="position: relative; z-index:9; min-height: 100vh;">
@@ -101,12 +104,17 @@
     </div>
   </div>
 
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+      $(window).scroll(function() {
+          if ($(this).scrollTop() > 100) {
+            $('.scrolldown').hide();
+          } else {
+            $('.scrolldown').show();
+          }
+      });
+    </script>
   </body>
 </html>
